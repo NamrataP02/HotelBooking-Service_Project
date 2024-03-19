@@ -165,7 +165,7 @@ display: inline-block;
 }
 
 .remember-forgot a {
-  margin-left: auto; /* Push the "Forgot Password?" link to the right */
+  margin-left: auto; 
   font-size: 0.7rem;
 }
 
