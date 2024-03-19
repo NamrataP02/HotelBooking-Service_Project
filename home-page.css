@@ -1,0 +1,365 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins','sans-serif';
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.homepage {
+  display: flex;
+  flex-direction: column;
+  }
+
+.header{
+  width:100%;
+  background: white;
+  padding: 10px;
+  border:  2px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.upper{
+  margin-right:10px;
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+
+}
+.left, .middle, .right {
+  flex: 1; 
+}
+
+.left {
+  text-align: left; 
+  align-items: center;
+}
+
+.middle {
+  text-align: center; 
+}
+
+.right {
+  text-align: right;
+}
+
+.logo,
+.country-logo,
+.help-logo {
+  display: inline-block;
+  margin-right: 10px; 
+  width: 20px;
+  height: 30px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  justify-content: start;
+}
+.country-logo img ,
+.help-logo img {
+  width: 100%; 
+  height: auto;
+}
+
+.search {
+  margin: 0;
+  position: relative;
+  flex: 1;
+}
+
+.search input[type="text"] {
+  width: 500px;
+  padding: 5px;
+}
+
+.search i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: grey;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.login-btn,
+.register-btn {
+  justify-content: end;
+  color: rgb(58, 58, 204);
+  background-color: white;
+  border: 2px solid rgb(58, 58, 204);
+  padding: 7px 20px;
+  margin-left: 10px; 
+  cursor: pointer;
+  width:150px;
+}
+.menu {
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.menu li {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  font-size: small;
+  margin: 5px;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: rgb(58, 58, 204);
+  border: 2px solid rgb(58, 58, 204);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.menu li:hover {
+  background: rgb(58, 58, 204);
+  color: white;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.container h1 {
+  position: absolute; 
+  top: 50%; 
+  left: 23%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 30px; }
+
+  .search-form {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Set maximum width */
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of children */
+    justify-content: center; /* Center align children horizontally */
+  }
+  .search-form .label{
+    color: #000000;
+  }
+  .option {
+    width: 150%; 
+    height: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    border-right-color: 1px solid black;
+  }
+  
+  .option label {
+    margin-right: 10px;
+  }
+  
+  .option select, input[type="text"] {
+    border-style: none;}
+ 
+  
+  .option button {
+    margin-left: auto;
+   width : 100px;
+    height: 49px;
+   padding: 20px;
+    background-color: blue;
+    color: white;
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .option button:hover {
+    background-color: darkblue;
+  }
+
+  .fa-solid.fa-hotel,
+  .fa-regular.fa-calendar-days,
+  .fa-solid.fa-user-plus {
+    color: blue; 
+    font-size: 20px; 
+    margin: 10px;
+  }
+  .offers {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  
+  .offers h1 {
+    text-align: left;
+  }
+  
+  .offer-options {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  .offer-options .toggle-label {
+    margin-top: 10px;
+  }
+  
+  
+
+  .offer-options input[type="radio"] + .toggle-label {
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.image-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  width: calc(33.33% - 20px); 
+  height: 250px; 
+  margin: 5px;
+  overflow: hidden; 
+  box-sizing: border-box;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.view-offers-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-offers-btn:hover {
+  background-color: darkblue;
+}
+
+.hotel-display{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+.display-box{
+  -ms-flex-item-align: auto;
+}
+  
+
+.hotel-display .container {
+  position: relative;
+  margin-top:10px;
+  width: 260px; 
+  height: 320px; 
+  border: 1px solid gray; 
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container img {
+  width: 100%; 
+  padding: 5px;
+  height: 60%; 
+  object-fit: cover; 
+}
+
+.container label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+}
+.hotel-display li{
+  width:calc(50%-10px);
+  margin-left:10px ;
+  margin-bottom: 20px;
+}
+.hotel-display ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.head {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333; 
+  margin-bottom: 5px;
+}
+
+.side {
+  padding: 5px;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.date {
+  padding: 5px;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+
+.note {
+  padding: 5px;
+  font-size: 10px;
+  color: #555; 
+  margin-top: 10px;
+}
