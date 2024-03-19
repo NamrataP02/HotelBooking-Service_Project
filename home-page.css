@@ -126,12 +126,11 @@ body {
   display: flex;
   color: rgb(58, 58, 204);
   border: 2px solid rgb(58, 58, 204);
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
+  transition: background-color 0.3s, color 0.3s;
 
 .menu li a {
   text-decoration: none;
-  color: inherit; /* Inherit color from parent */
+  color: inherit; 
 }
 
 .menu li:hover {
@@ -173,8 +172,8 @@ body {
     font-size: 12px;
     background-color: white;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of children */
-    justify-content: center; /* Center align children horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .search-form .label{
     color: #000000;
