@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/cssCode/landing-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="/javascriptCode/landing-page.js"></script>
+    <header class="header">
+        <div class="header-upper">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="/assets/logo.jpg" alt="Logo">
+                </div>
+                <div class="country-logo">
+                    <img src="/assets/country-logo.png" alt="Country Logo">
+                </div>
+                <div class="help-logo">
+                    <img src="/assets/help-logo.png" alt="Help Logo">
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="login-btn" id="loginButton">Sign in</button>
+                <button class="register-btn" id="registerButton">Register</button>
+            </div>
+        </div>
+        <div class="header-lower">
+            <ul class="menu">
+                <li><a href="#">Trip</a></li>
+                <li><a href="#">%Deals</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Flight</a></li>
+                <li><a href="#">Apartment</a></li>
+                <li><a href="#">Camper</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="background-container">
+                <img src="/assets/background.jpg" alt="Your Image">
+                <h1>Discover Your Trip <br> Worldwide!</h1>
+            </div>
+        </section>
+
+        <div class="search-form">
+          <div class="option">
+              <i class="fa-solid fa-hotel"></i>
+              <input type="text" id="destination" name="destination" placeholder="Where Are you going To?">
+          </div>
+          <div class="option">
+              <i class="fa-regular fa-calendar-days"></i>
+              <label for="checkin">Check-in Date</label>
+              <label for="checkout">Check-out Date</label>
+          </div>
+          <div class="option">
+              <i class="fa-solid fa-user-plus"></i>
+              <label for="adults">Adults 2</label>
+              <label for="children">Children 3</label>
+              <label for="rooms">Rooms</label>
+              <select id="rooms" name="rooms">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select>
+          </div>
+          <div class="option">
+              <button type="submit">Search</button>
+          </div>
+      </div>
+
+        <section class="offers-section">
+          <div class="offers">
+            <h2>Special Offers</h2>
+            <div class="offer-options">
+              <div class="all-offers">
+                <input type="radio" id="all" name="offer-type">
+                <label for="all" class="toggle-label">All</label>
+              </div>
+              <div class="hotels-offers">
+                <input type="radio" id="hotels" name="offer-type">
+                <label for="hotels" class="toggle-label">Hotels</label>
+              </div>
+              <div class="flights-offers">
+                <input type="radio" id="flights" name="offer-type">
+                <label for="flights" class="toggle-label">Flights</label>
+              </div>
+              <div class="multi-offers">
+                <input type="radio" id="multi" name="offer-type">
+                <label for="multi" class="toggle-label">Multi</label>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="image-section">
+          <div class="image-container">
+            <div class="image-item">
+             <img src="/assets/image1.jpg" >
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+           <div class="image-item">
+             <img src="/assets/image2.JPG">
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+           <div class="image-item">
+             <img src="/assets/image3.JPG" >
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+           <div class="image-item">
+             <img src="/assets/image4.jpg" >
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+           <div class="image-item">
+             <img src="/assets/image5.JPG" >
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+           <div class="image-item">
+             <img src="/assets/image6.jpg" >
+             <div class="right-note">
+              <button>Deals Discover</button>
+            </div>
+           </div>
+         </div>
+         
+        </section>
+
+        <section class="hotel-section">
+           <div class="hotel-display">
+            <h2>Explore Stays In Trending Destinations</h2>
+            <label>Find Hot Stays!</label>
+            <div class="display-box">
+             <div class="onerow">
+              <ul>
+                <li><div class="container">
+                  <img src="/assets/image1.jpg" alt="Image 1">
+                  <lable class="head">Berlin</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                    <img src="/assets/image2.jpg" alt="Image 1">
+                    <lable class="head">Paris</lable><br>
+                    <lable class="side">SIDE</lable><br>
+                    <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                    <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                  <img src="/assets/image3.jpg" alt="Image 1">
+                  <lable class="head">Madrid</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+              </li>
+              <li><div class="container">
+                <img src="/assets/image4.jpg" alt="Image 1">
+                <lable class="head">Barcelona</lable><br>
+                <lable class="side">SIDE</lable><br>
+                <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+            </li>
+              </ul>
+             </div>
+             <div class="tworow">
+              <ul>
+                <li><div class="container">
+                  <img src="/assets/image1.jpg" alt="Image 1">
+                  <lable class="head">Rom</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                    <img src="/assets/image2.jpg" alt="Image 1">
+                    <lable class="head">Milan</lable><br>
+                    <lable class="side">SIDE</lable><br>
+                    <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                    <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                  <img src="/assets/hotel.jpeg" alt="Image 1">
+                  <lable class="head">Istanbul</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+              </li>
+              <li><div class="container">
+                <img src="/assets/image4.jpg" alt="Image 1">
+                <lable class="head">Dubai</lable><br>
+                <lable class="side">SIDE</lable><br>
+                <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+            </li>
+              </ul>
+             </div>
+             <div class="thirdrow">
+              <ul>
+                <li><div class="container">
+                  <img src="/assets/image1.jpg" alt="Image 1">
+                  <lable class="head">Amesterdam</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                    <img src="/assets/image2.jpg" alt="Image 1">
+                    <lable class="head">New York</lable><br>
+                    <lable class="side">SIDE</lable><br>
+                    <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                    <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+                </li>
+                <li><div class="container">
+                  <img src="/assets/image3.jpg" alt="Image 1">
+                  <lable class="head">Marollca</lable><br>
+                  <lable class="side">SIDE</lable><br>
+                  <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                  <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+              </li>
+              <li><div class="container">
+                <img src="/assets/image4.jpg" alt="Image 1">
+                <lable class="head">Teneriffa</lable><br>
+                <lable class="side">SIDE</lable><br>
+                <lable class="date">Wed 25 Jan-Fri 27 Jan</lable><br>
+                <p class="note"> A tour of the City and its Surroundings Led By A Professional Guide...</p></div>
+            </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="highestoffer-section">
+          <div class="hotel-display">
+           <h2>Compare The Highest Reviewed Past Offers</h2>
+           <label>Browse By Type</label>
+           <div class="display-box">
+            <div class="firstrow">
+             <ul>
+               <li><div class="container">
+                 <img src="/assets/flight.jpg" alt="Image 1">
+                 <lable class="head">Flight</lable><br>
+                </li>
+               <li><div class="container">
+                   <img src="/assets/location.jpeg" alt="Image 1">
+                   <lable class="head">Location</lable><br>                  
+               </li>
+               <li><div class="container">
+                 <img src="/assets/hotel.jpeg" alt="Image 1">
+                 <lable class="head">Hotel</lable><br>
+                 
+             </li>
+             <li><div class="container">
+               <img src="/assets/package.jpeg" alt="Image 1">
+               <lable class="head">Package</lable><br>               
+           </li>
+             </ul>
+            </div>
+            <div class="secondrow">
+             <ul>
+               <li><div class="container">
+                 <img src="/assets/seasonal.jpg" alt="Image 1">
+                 <lable class="head">Seasonal</lable><br>
+                 
+               </li>
+               <li><div class="container">
+                   <img src="/assets/camps.jpg" alt="Image 1">
+                   <lable class="head">Camps</lable><br>
+                 
+               </li>
+               <li><div class="container">
+                 <img src="/assets/bacpacking.jpeg" alt="Image 1">
+                 <lable class="head">Backpacking</lable><br>
+                 
+             </li>
+             <li><div class="container">
+               <img src="/assets/hostels.jpeg" alt="Image 1">
+               <lable class="head">Hostels</lable><br>
+             </li>
+             </ul>
+            </div>
+          </div>
+         </div>
+       </section>
+    </main>
+
+    <section class="readmoreimg-section">
+      <div class="readmoreimg-container">
+          <img src="/assets/readmore.png" alt="Your Image">
+          <div class="left-note">
+            <h1>get inspirations for  your next trip</h1>
+            <h6>read about wonderful adventure we love most</h6>
+          </div>
+          <div class="right-note">
+            <h1>difficult roads leads to <br> beautiful destination.</h1><br>
+            <button>Read More</button>
+          </div>
+          
+      </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="upper">
+      <div class="left">
+        <p id="title">Go Further with the EasySet24 App</p>
+        <p>Enjoy savings on chosen hotels anf flights when you book through the EasySet24 website.</p>
+        <p>additionally, earn one key cash for every booking mode through the app.</p>
+        <p id="smalltagline">secured by europe GTP</p></div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <div class="middle">
+      <div class="shortlinks">
+        <div class="aboutus">
+          <h5>About Us</h5>
+          <ul class="list">
+            <li><a href="#our-story">Our Story</a></li>
+            <li><a href="#work-with-us">Work with Us</a></li>
+            <li><a href="#press-media">Press Media</a></li>
+            <li><a href="#privacy-security">Privacy &amp; Security</a></li>
+          </ul>
+        </div>
+        <div class="weoffer">
+          <h5>We Offer</h5>
+          <ul class="list">
+            <li><a href="#trip-sponsorship">Trip Sponsorship</a></li>
+            <li><a href="#last-minute-flights">Last Minutes Flights</a></li>
+            <li><a href="#best-deals">Best Deals</a></li>
+            <li><a href="#ai-driven-search">AI-Driven Search</a></li>
+          </ul>
+          
+        </div>
+        <div class="Headquarters">
+          <h5>Headquarters</h5>
+          <ul class="list">
+            <li><a href="#england">England</a></li>
+            <li><a href="#france">France</a></li>
+            <li><a href="#canada">Canada</a></li>
+            <li><a href="#iceland">Iceland</a></li>
+          </ul>
+          
+        </div>
+        <div class="Travleblogs">
+          <h5>Travel Blogs</h5>
+          <ul class="list">
+            <li><a href="#ball-travel-guide">Ball Travel Guide</a></li>
+            <li><a href="#sri-travel-guide">Sri Travel Guide</a></li>
+            <li><a href="#peru-travel-guide">Peru Travel Guide</a></li>
+            <li><a href="#swiss-travel-guide">Swiss Travel Guide</a></li>
+          </ul>
+          
+        </div>
+        <div class="activities">
+          <h5>Activities</h5>
+          <ul class="list">
+            <li><a href="#tour-leading">Tour Leading</a></li>
+            <li><a href="#cruising-sailing">Cruising & Sailing</a></li>
+            <li><a href="#camping">Camping</a></li>
+            <li><a href="#kayaking">Kayaking</a></li>
+          </ul>
+          
+        </div>
+        <div class="Service">
+          <h5>Service</h5>
+          <ul class="list">
+            <li><a href="#report-error">Report Error</a></li>
+            <li><a href="#ask-online">Ask Online</a></li>
+            <li><a href="#travel-insurance">Travel Insurance</a></li>
+          </ul>   
+        </div>
+      </div>
+
+      <div class="paymentfollow-options">
+        <div class="paymentoptions"></div>
+        <div class="followus">
+          <ul>
+            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a><i class="fa-brands fa-telegram"></i></a></li>
+            <li><a><i class="fa-brands fa-twitter"></i></i></a></li>
+            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a><i class="fa-brands fa-square-instagram"></i></i></a></li>
+          </ul>
+        </div>
+        <div class="inputemail">
+          <label for="email">Email</label><br>
+          <input type="email" name="email" placeholder="Enter your Email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+   
+    <div class="lower">
+     <div class="rights">
+      <P><i class="fa-regular fa-registered"></i> Copyright EasySet24</P>
+     </div>
+     <div class="emails">
+      <p><i class="fa-regular fa-envelope"></i> EasySet24@Gmail.com</p>
+     </div>
+     <div class="tagline" id="tagline">
+      <p>"EasySet24: Seamless Journeys, Unrivalled Travel Wisdom!"</p>
+     </div>
+     <div class="location">
+      <p><i class="fa-solid fa-location-dot"></i> EasySet24@Gmail.com</p>
+     </div>
+     <div class="contact">
+      <p><i class="fa-solid fa-phone-volume"></i> EasySet24@Gmail.com</p>
+     </div>
+      
+    </div>
+  </footer>
+  
+</body>
+</html>
