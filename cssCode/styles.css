@@ -165,7 +165,11 @@ body {
 }
 
 .remember-forgot a {
+<<<<<<< HEAD:cssCode/styles.css
   margin-left: auto;
+=======
+  margin-left: auto; 
+>>>>>>> fd1e2a49a101820870eea56ae4d19a4e83b3104e:styles.css
   font-size: 0.7rem;
 }
 
